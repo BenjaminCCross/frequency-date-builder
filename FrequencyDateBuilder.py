@@ -25,10 +25,12 @@ for filename in filenames:
     with open(filename, 'r') as file:
         readFile(file)
 
-print("number of visits by day:")
-print(dayCounter)
+print("number of visits by day (starts on Monday):")
+for x in range(0, 7):
+    print "%d -- %d" % (x, dayCounter[x])
 print("number of visits by hour:")
-print(hourCounter)
-print("list of names that visited:")
-print(names)
-print(len(names))
+for x in range(0, 24):
+    print "%d:00 -- %d" % (x, hourCounter[x])
+print"list of the %d names that visited:" % (len(names))
+for name in names:
+    print(name)
