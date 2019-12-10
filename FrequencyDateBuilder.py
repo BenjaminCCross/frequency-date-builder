@@ -27,10 +27,10 @@ for filename in filenames:
 
 print("number of visits by day (starts on Monday):")
 for x in range(0, 7):
-    print("%d -- %d", x, dayCounter[x])
+    print("%d -- %d" % (x, dayCounter[x]))
 print("number of visits by hour:")
 for x in range(0, 24):
-    print("%d:00 -- %d", (x, hourCounter[x]))
+    print("%d:00 -- %d" % (x, hourCounter[x]))
 print("list of the %d names that visited:", (len(names)))
 for name in names:
     print(name)
